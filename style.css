@@ -1,182 +1,93 @@
-/* ✅ General Styles */
+/* Arizona Golf Themed Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f5f5f5;
+    background-color: #f4f1ea;
+    color: #333;
 }
 
-/* ✅ Header Styling */
 header {
-    background-image: url("images/header.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    background-color: #8c6239;
     color: white;
     padding: 20px;
+    text-align: center;
 }
 
-header h1 {
-    font-size: 40px;
-    font-weight: bold;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    margin-bottom: 10px;
-}
-
-/* ✅ Navigation Bar */
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin: 10px 0;
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
 nav ul li {
-    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 12px 18px;
-    border-radius: 8px;
-    text-decoration: none;
     color: white;
-    font-size: 16px;
+    text-decoration: none;
     font-weight: bold;
-    transition: all 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    transform: scale(1.1);
-}
-
-/* ✅ Hero Section */
 .hero {
+    text-align: center;
     padding: 60px 20px;
-    background-color: #f4f4f4;
+    background: url('images/arizona-golf.jpg') center/cover no-repeat;
+    color: white;
 }
 
 .hero h2 {
-    font-size: 28px;
-    color: #222;
+    font-size: 2.5rem;
 }
 
-.hero p {
-    font-size: 18px;
-    color: #666;
+.cta {
+    background-color: #4a752c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-/* ✅ Product Section */
-#products {
+.courses {
     text-align: center;
-    padding: 60px 20px;
-    background-color: #ffffff;
+    padding: 50px 20px;
 }
 
-#products h2 {
-    font-size: 32px;
-    color: #222;
-    margin-bottom: 30px;
-}
-
-/* ✅ Product Grid */
-.product-list {
+.course-list {
     display: flex;
-    justify-content: center;
-    gap: 25px;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.product {
+.course {
     background: white;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 280px;
-    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
 }
 
-.product:hover {
-    transform: translateY(-5px);
-}
-
-.product img {
-    width: 100%;
+.course img {
+    max-width: 100%;
     border-radius: 10px;
 }
 
-.product h3 {
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-}
-
-.product p {
-    font-size: 14px;
-    color: #666;
-}
-
-/* ✅ Buttons */
-.product button {
-    background-color: #1a1a1a;
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #c69c6d;
     color: white;
-    border: none;
-    padding: 12px 18px;
-    margin-top: 12px;
-    cursor: pointer;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: all 0.3s ease-in-out;
 }
 
-.product button:hover {
-    background-color: #333;
-    transform: scale(1.05);
-}
-
-/* ✅ Footer */
 footer {
-    background-color: #1a1a1a;
-    color: white;
+    text-align: center;
     padding: 20px;
-    font-size: 14px;
-    margin-top: 30px;
-}
-
-/* ✅ Mobile Responsiveness */
-@media screen and (max-width: 768px) {
-    header {
-        height: 280px;
-    }
-
-    header h1 {
-        font-size: 32px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .product-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .product {
-        max-width: 90%;
-    }
+    background-color: #8c6239;
+    color: white;
 }
